@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4EEE1F64-7629-4C07-AB7C-EACF326827A6}|ReconTransactions\\ReconTransactions.csproj|d:\\vs 2022\\projects\\repos\\recontransactions\\recontransactions\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EEE1F64-7629-4C07-AB7C-EACF326827A6}|ReconTransactions\\ReconTransactions.csproj|solutionrelative:recontransactions\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EEE1F64-7629-4C07-AB7C-EACF326827A6}|ReconTransactions\\ReconTransactions.csproj|d:\\vs 2022\\projects\\repos\\recontransactions\\recontransactions\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EEE1F64-7629-4C07-AB7C-EACF326827A6}|ReconTransactions\\ReconTransactions.csproj|solutionrelative:recontransactions\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EEE1F64-7629-4C07-AB7C-EACF326827A6}|ReconTransactions\\ReconTransactions.csproj|d:\\vs 2022\\projects\\repos\\recontransactions\\recontransactions\\wwwroot\\css\\tabulator-filters.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4EEE1F64-7629-4C07-AB7C-EACF326827A6}|ReconTransactions\\ReconTransactions.csproj|solutionrelative:recontransactions\\wwwroot\\css\\tabulator-filters.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EEE1F64-7629-4C07-AB7C-EACF326827A6}|ReconTransactions\\ReconTransactions.csproj|d:\\vs 2022\\projects\\repos\\recontransactions\\recontransactions\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4EEE1F64-7629-4C07-AB7C-EACF326827A6}|ReconTransactions\\ReconTransactions.csproj|solutionrelative:recontransactions\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EEE1F64-7629-4C07-AB7C-EACF326827A6}|ReconTransactions\\ReconTransactions.csproj|d:\\vs 2022\\projects\\repos\\recontransactions\\recontransactions\\wwwroot\\js\\tabulator-generic-filters.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{4EEE1F64-7629-4C07-AB7C-EACF326827A6}|ReconTransactions\\ReconTransactions.csproj|solutionrelative:recontransactions\\wwwroot\\js\\tabulator-generic-filters.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EEE1F64-7629-4C07-AB7C-EACF326827A6}|ReconTransactions\\ReconTransactions.csproj|d:\\vs 2022\\projects\\repos\\recontransactions\\recontransactions\\models\\internreconclosetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EEE1F64-7629-4C07-AB7C-EACF326827A6}|ReconTransactions\\ReconTransactions.csproj|solutionrelative:recontransactions\\models\\internreconclosetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EEE1F64-7629-4C07-AB7C-EACF326827A6}|ReconTransactions\\ReconTransactions.csproj|d:\\vs 2022\\projects\\repos\\recontransactions\\recontransactions\\models\\internrecontransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EEE1F64-7629-4C07-AB7C-EACF326827A6}|ReconTransactions\\ReconTransactions.csproj|solutionrelative:recontransactions\\models\\internrecontransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EEE1F64-7629-4C07-AB7C-EACF326827A6}|ReconTransactions\\ReconTransactions.csproj|d:\\vs 2022\\projects\\repos\\recontransactions\\recontransactions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EEE1F64-7629-4C07-AB7C-EACF326827A6}|ReconTransactions\\ReconTransactions.csproj|solutionrelative:recontransactions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EEE1F64-7629-4C07-AB7C-EACF326827A6}|ReconTransactions\\ReconTransactions.csproj|d:\\vs 2022\\projects\\repos\\recontransactions\\recontransactions\\data\\yourdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EEE1F64-7629-4C07-AB7C-EACF326827A6}|ReconTransactions\\ReconTransactions.csproj|solutionrelative:recontransactions\\data\\yourdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InternReconCloseTransaction.cs",
+              "DocumentMoniker": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\ReconTransactions\\Models\\InternReconCloseTransaction.cs",
+              "RelativeDocumentMoniker": "ReconTransactions\\Models\\InternReconCloseTransaction.cs",
+              "ToolTip": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\ReconTransactions\\Models\\InternReconCloseTransaction.cs",
+              "RelativeToolTip": "ReconTransactions\\Models\\InternReconCloseTransaction.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAADwvy4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T09:05:44.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\ReconTransactions\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "ReconTransactions\\Pages\\Index.cshtml.cs",
+              "ToolTip": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\ReconTransactions\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "ReconTransactions\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAiwJ0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T09:01:51.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "tabulator-filters.css",
+              "DocumentMoniker": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\ReconTransactions\\wwwroot\\css\\tabulator-filters.css",
+              "RelativeDocumentMoniker": "ReconTransactions\\wwwroot\\css\\tabulator-filters.css",
+              "ToolTip": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\ReconTransactions\\wwwroot\\css\\tabulator-filters.css",
+              "RelativeToolTip": "ReconTransactions\\wwwroot\\css\\tabulator-filters.css",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAwwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-19T08:42:08.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "tabulator-generic-filters.js",
+              "DocumentMoniker": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\ReconTransactions\\wwwroot\\js\\tabulator-generic-filters.js",
+              "RelativeDocumentMoniker": "ReconTransactions\\wwwroot\\js\\tabulator-generic-filters.js",
+              "ToolTip": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\ReconTransactions\\wwwroot\\js\\tabulator-generic-filters.js",
+              "RelativeToolTip": "ReconTransactions\\wwwroot\\js\\tabulator-generic-filters.js",
+              "ViewState": "AgIAAPUCAAAAAAAAAAAAAAoDAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-19T08:37:01.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\ReconTransactions\\appsettings.json",
+              "RelativeDocumentMoniker": "ReconTransactions\\appsettings.json",
+              "ToolTip": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\ReconTransactions\\appsettings.json",
+              "RelativeToolTip": "ReconTransactions\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-19T08:56:18.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\ReconTransactions\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "ReconTransactions\\Pages\\Index.cshtml",
+              "ToolTip": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\ReconTransactions\\Pages\\Index.cshtml",
+              "RelativeToolTip": "ReconTransactions\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAAwJwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-19T08:35:35.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\ReconTransactions\\Program.cs",
+              "RelativeDocumentMoniker": "ReconTransactions\\Program.cs",
+              "ToolTip": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\ReconTransactions\\Program.cs",
+              "RelativeToolTip": "ReconTransactions\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T09:17:16.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InternReconTransactions.cs",
+              "DocumentMoniker": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\ReconTransactions\\Models\\InternReconTransactions.cs",
+              "RelativeDocumentMoniker": "ReconTransactions\\Models\\InternReconTransactions.cs",
+              "ToolTip": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\ReconTransactions\\Models\\InternReconTransactions.cs",
+              "RelativeToolTip": "ReconTransactions\\Models\\InternReconTransactions.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA2wCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T08:41:06.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "YourDbContext.cs",
+              "DocumentMoniker": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\ReconTransactions\\Data\\YourDbContext.cs",
+              "RelativeDocumentMoniker": "ReconTransactions\\Data\\YourDbContext.cs",
+              "ToolTip": "D:\\VS 2022\\Projects\\Repos\\ReconTransactions\\ReconTransactions\\Data\\YourDbContext.cs",
+              "RelativeToolTip": "ReconTransactions\\Data\\YourDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T08:36:28.577Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

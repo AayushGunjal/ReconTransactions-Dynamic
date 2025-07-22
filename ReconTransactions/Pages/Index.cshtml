@@ -1,0 +1,157 @@
+﻿@page
+@model BankReconModel
+@using ReconTransactions.Pages
+@using Microsoft.AspNetCore.Http
+
+<!-- Tabulator styles and scripts -->
+<link href="~/lib/tabulator/tabulator.min.css" rel="stylesheet" />
+<script src="~/lib/tabulator/tabulator.min.js"></script>
+<script src="~/js/tabulator-generic-filters.js"></script>
+<link href="~/css/tabulator-filters.css" rel="stylesheet" />
+
+<h4 class="mb-3 text-primary">Bank Reconciliation Transactions</h4>
+
+<form>
+    <div class="row g-2 align-items-end">
+        <div class="col-auto">
+            <label for="bankName" class="form-label">Bank Name</label>
+            <select id="bankName" name="bankName" class="form-control" required>
+                <option value="">-- Select Bank --</option>
+                @foreach (var bank in Model.BankNames)
+                {
+                    <option value="@bank">@bank</option>
+                }
+            </select>
+        </div>
+
+        <div class="col-auto">
+            <label for="accountNumber" class="form-label">Account Number</label>
+            <select id="accountNumber" name="accountNumber" class="form-control" required>
+                <option value="">-- Select Account --</option>
+            </select>
+        </div>
+
+        <div class="col-auto">
+            <label for="fromDate" class="form-label">From Date</label>
+            <input type="date" id="fromDate" name="fromDate" class="form-control" required />
+        </div>
+
+        <div class="col-auto">
+            <label for="toDate" class="form-label">To Date</label>
+            <input type="date" id="toDate" name="toDate" class="form-control" required />
+        </div>
+
+        <div class="col-auto">
+            <button type="button" id="btnSubmit" class="btn btn-sm btn-primary">Submit</button>
+        </div>
+    </div>
+</form>
+
+<div id="tabulator-table" class="mt-3"></div>
+
+<script>
+    let table;
+    const pageUrl = window.location.pathname;
+    const accountNumbersUrl = pageUrl + '?handler=AccountNumbers';
+    const reconDataUrl = pageUrl + '?handler=ReconData';
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Bank name change event
+        document.getElementById("bankName").addEventListener("change", function () {
+            let bankName = this.value;
+            let accountSelect = document.getElementById("accountNumber");
+
+            if (!bankName) {
+                accountSelect.innerHTML = '<option value="">-- Select Account --</option>';
+                return;
+            }
+
+            document.body.classList.add("wait-cursor");
+
+            fetch(accountNumbersUrl + '&bankName=' + encodeURIComponent(bankName), {
+                method: 'GET',
+                headers: { 'X-Requested-With': 'XMLHttpRequest' }
+            })
+            .then(res => res.json())
+            .then(data => {
+                accountSelect.innerHTML = '<option value="">-- Select Account --</option>';
+                data.forEach(acc => {
+                    accountSelect.innerHTML += `<option value="${acc}">${acc}</option>`;
+                });
+            })
+            .catch(err => {
+                console.error('Error loading account numbers:', err);
+                alert('Error loading account numbers. Please try again.');
+            })
+            .finally(() => {
+                document.body.classList.remove("wait-cursor");
+            });
+        });
+
+        // Submit button click
+        document.getElementById("btnSubmit").addEventListener("click", function () {
+            const bankName = document.getElementById("bankName").value;
+            const accountNumber = document.getElementById("accountNumber").value;
+            const fromDate = document.getElementById("fromDate").value;
+            const toDate = document.getElementById("toDate").value;
+
+            if (!bankName || !accountNumber || !fromDate || !toDate) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            const url = `${reconDataUrl}&bankName=${encodeURIComponent(bankName)}&accountNumber=${encodeURIComponent(accountNumber)}&fromDate=${encodeURIComponent(fromDate)}&toDate=${encodeURIComponent(toDate)}`;
+
+            document.body.classList.add("wait-cursor");
+
+            fetch(url, {
+                method: 'GET',
+                headers: { 'X-Requested-With': 'XMLHttpRequest' }
+            })
+            .then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.json();
+            })
+            .then(result => {
+                const columns = result.columns;
+                const data = result.data;
+
+                // Build fieldTypeMap for generic filter (all text by default)
+                window.TabulatorGenericFilter = window.TabulatorGenericFilter || {};
+                TabulatorGenericFilter.fieldTypeMap = {};
+                columns.forEach(col => {
+                    TabulatorGenericFilter.fieldTypeMap[col.field] = "text";
+                });
+
+                if (table) {
+                    table.setColumns(columns);
+                    table.replaceData(data);
+                    if (window.TabulatorGenericFilter && window.TabulatorGenericFilter.clearAllFilters) {
+                        window.TabulatorGenericFilter.clearAllFilters(table);
+                    }
+                } else {
+                    table = new Tabulator("#tabulator-table", {
+                        data: data,
+                        height: "600px",
+                        layout: "fitDataStretch",
+                        pagination: true,
+                        paginationSize: 15,
+                        paginationSizeSelector: [10, 15, 20, 50, 100],
+                        columns: columns
+                    });
+                }
+
+                if (window.TabulatorGenericFilter && window.TabulatorGenericFilter.attachFilterIcons) {
+                    TabulatorGenericFilter.attachFilterIcons(table, columns);
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching reconciliation data:', error);
+                alert('Error loading reconciliation data.');
+            })
+            .finally(() => {
+                document.body.classList.remove("wait-cursor");
+            });
+        });
+    });
+</script>
